@@ -14,7 +14,7 @@ int permutation_number(int deck[], int n) {
 
         // Count how many unused cards occur before this one.
         int pos = 0;
-        for (Int j = 0; j < val; j++) {
+        for (int j = 0; j < val; j++) {
             pos += aux[j];
         }
 
@@ -23,5 +23,6 @@ int permutation_number(int deck[], int n) {
         f /= N-i-1; // change the factorial multiplier
     }
 
+    free(available);
     return pn;
 }
